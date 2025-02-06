@@ -15,7 +15,7 @@ The design is organized into the following modules:
 
 ### **Pipelined Implementation**  
 
-#### **Control Logic** [`Control_Logic/`]  
+#### **Control Logic** (Control_Logic)  
 Handles instruction decoding, execution control, memory operations, and write-back.  
 - [`Control_Logic_Decode.v`](Control_Logic/Control_Logic_Decode.v) – Decodes instructions and generates control signals  
 - [`Control_Logic_Execute.v`](Control_Logic/Control_Logic_Execute.v) – Controls ALU operations  
