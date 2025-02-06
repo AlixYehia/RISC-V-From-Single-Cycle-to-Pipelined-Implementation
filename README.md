@@ -1,9 +1,9 @@
 # RISC-V: From Single-Cycle to Pipelined Implementation
 
-# RISC-V Single-Cycle
+## RISC-V Single-Cycle
 ![Single Cycle RISC-V](assets/Single%20Cycle%20RISC-V.png)
 
-# Pipelined RISC-V
+## Pipelined RISC-V
 ![image](assets/Pipelined%20RISC-V.jpg)
 
 ## Overview  
