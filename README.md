@@ -71,6 +71,6 @@ Handles instruction and data memory storage.
 - Includes memory initialization for testing real instruction sequences  
 
 ## Running the Project  
-To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim, Xilinx Vivado, or QuestaSim**).
+To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim, Vivado, or QuestaSim**).
 
 To run the project you can use [run.do](run.do)
