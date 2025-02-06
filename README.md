@@ -1,7 +1,13 @@
 # RISC-V: From Single-Cycle to Pipelined Implementation  
 
 ## Overview  
-This project implements a **RISC-V processor**, transitioning from a **single-cycle** design to a **pipelined implementation** with hazard detection. The processor supports multiple instruction formats, including **R-type, I-type, S-type, B-type, U-type, and J-type**.  
+This project implements a **RISC-V processor** using a **Hardware/Software Co-Design approach**, transitioning from a **single-cycle** design to a **pipelined implementation** with hazard detection.  
+
+### **Co-Design Aspects**
+- **Hardware (HW):** A fully functional **RISC-V pipelined processor** implemented in Verilog.  
+- **Software (SW):** A RISC-V assembly program written and simulated in **Venus**, generating instructions executed by the hardware.  
+
+The processor supports multiple instruction formats, including **R-type, I-type, S-type, B-type, U-type, and J-type**.  
 
 ## Features  
 - **Single-cycle and pipelined implementations**  
