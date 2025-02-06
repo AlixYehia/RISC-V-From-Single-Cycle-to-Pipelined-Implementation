@@ -16,7 +16,7 @@ The processor supports multiple instruction formats, including **R-type, I-type,
 - **Supports standard RISC-V instruction types**  
 
 ## RISC-V Single-Cycle
-![Single Cycle RISC-V](assets/assets/Single%20Cycle%20RISC-V%20Datapath.png)
+![Single Cycle RISC-V](assets/Single%20Cycle%20RISC-V%20Datapath.png)
 
 ## Pipelined RISC-V
 ![image](assets/Pipelined%20RISC-V.jpg)
