@@ -15,14 +15,14 @@ The design is organized into the following modules:
 
 ### **Pipelined Implementation**  
 
-#### **[Control Logic](Control_Logic/)**
+#### **Control Logic**
 Handles instruction decoding, execution control, memory operations, and write-back.  
 - [`Control_Logic_Decode.v`](Control_Logic/Control_Logic_Decode.v) – Decodes instructions and generates control signals  
 - [`Control_Logic_Execute.v`](Control_Logic/Control_Logic_Execute.v) – Controls ALU operations  
 - [`Control_Logic_Memory.v`](Control_Logic/Control_Logic_Memory.v) – Manages memory read/write operations  
 - [`Control_Logic_Write.v`](Control_Logic/Control_Logic_Write.v) – Handles register write-back  
 
-#### **Data Path** [`Data_Path/`]  
+#### **Data Path**
 Implements the main processing components of the pipeline.  
 - [`Add.v`](Data_Path/Add.v) – Simple adder unit  
 - [`ALU.v`](Data_Path/ALU.v) – Arithmetic Logic Unit for computation  
@@ -36,17 +36,17 @@ Implements the main processing components of the pipeline.
 - [`Register.v`](Data_Path/Register.v) – Single register module  
 - [`RegisterFile.v`](Data_Path/RegisterFile.v) – Register file containing all general-purpose registers  
 
-#### **Hazard Unit** [`Hazard_Unit/`]  
+#### **Hazard Unit** 
 Detects and resolves data hazards in the pipeline.  
 - [`Hazard_Unit.v`](Hazard_Unit/Hazard_Unit.v) – Implements forwarding and stall logic  
 
-#### **Memory** [`Memory/`]  
+#### **Memory**
 Handles instruction and data memory storage.  
 - [`DMEM.v`](Memory/DMEM.v) – Data Memory module  
 - [`IMEM.v`](Memory/IMEM.v) – Instruction Memory module  
 - [`instruction.txt`](Memory/instruction.txt) – Sample instruction memory file  
 
-#### **Venus Program Code** [`Venus.txt`]  
+#### **Venus Program Code** 
 - [`Venus.txt`](Venus.txt) – Contains RISC-V assembly code for testing on [Venus Simulator](https://venus.cs61a.org/)  
 
 ## Simulation & Testing  
@@ -55,4 +55,5 @@ Handles instruction and data memory storage.
 - Includes memory initialization for testing real instruction sequences  
 
 ## Running the Project  
-To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim, Xilinx Vivado, or QuestaSim**).  
+To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim, Xilinx Vivado, or QuestaSim**).
+to run the project you can use [run.do](run.do)
