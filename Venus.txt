@@ -1,0 +1,36 @@
+.data
+fib_result: .word 0      # Reserve space for one word to store the result
+
+.text
+main:
+    la t3, fib_result    # Load the address of fib_result into t3 (requires 2 manual stalls between translated instructions)
+    add t0, x0, x0       # t0 = 0 (1st Fibonacci number)
+    addi t1, x0, 1       # t1 = 1 (2nd Fibonacci number)
+    li t4, 6             # Load n = 6 into t4
+
+fib: 
+    beq t4, x0, finish   # If n == 0, exit loop
+    nop
+    nop
+    nop
+    add t2, t1, t0       # t2 = t1 + t0 (next Fibonacci number)
+    mv t0, t1            # t0 = t1 (shift Fibonacci sequence)
+    mv t1, t2            # t1 = t2 (shift Fibonacci sequence)
+    addi t4, t4, -1      # Decrement n
+    j fib                # Repeat the loop
+    nop
+    nop
+    nop
+finish:
+    sw t0, 0(t3)         # Store the final Fibonacci number in fib_result
+    li t6, 5             # t6 = 5
+    lw t6, 0(t3)         # t6 = 8
+    addi t5, t6, 8       # t5 = 16
+    addi t1, t5, 0       # t1 = 16
+    
+    
+    
+    
+    
+    
+    
