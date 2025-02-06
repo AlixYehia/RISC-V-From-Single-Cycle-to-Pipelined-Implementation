@@ -5,7 +5,7 @@ This project implements a **RISC-V processor**, transitioning from a **single-cy
 
 ## Features  
 - **Single-cycle and pipelined implementations**  
-- **Hazard detection unit** for efficient instruction execution  
+- **Hazard detection unit** 
 - **Fully parameterized and modular design**  
 - **Supports standard RISC-V instruction types**  
 
