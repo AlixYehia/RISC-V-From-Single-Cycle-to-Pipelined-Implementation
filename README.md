@@ -51,7 +51,6 @@ Implements the main processing components of the pipeline.
 - [`RegisterFile.v`](Data_Path/RegisterFile.v) – Register file containing all general-purpose registers  
 
 #### **Hazard Unit** 
-## RISC-V Single-Cycle
 ![Hazard Unit](assets/Hazard.png)
 Detects and resolves data hazards in the pipeline.  
 - [`Hazard_Unit.v`](Hazard_Unit/Hazard_Unit.v) – Implements forwarding and stall logic  
