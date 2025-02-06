@@ -70,7 +70,7 @@ always@(posedge clk or negedge rst_n)
   else
    begin
    	if (Instr_1[24:20] == 5'b0 || Instr_2[11:7] == 5'b0 || Instr_3[11:7] == 5'b0 || Instr_1[6:2] == 5'b00100) // In I-type instruction, rs2 bits are repurposed for the immediate value. So it will be misleading if rs2 was equal to rd
-     begin                                                                                                    // Therefore, the opcode of I-type instructions is included to handle this issue (effective 5 bits )
+     begin                                                                                                        // Therefore, the opcode of I-type instructions is included to handle this issue (effective 5 bits )
    	  Rs2_Mux_Sel <= 2'd0;                      // No forwarding
      end
     else
