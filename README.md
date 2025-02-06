@@ -1,11 +1,5 @@
 # RISC-V: From Single-Cycle to Pipelined Implementation
 
-# RISC-V Single-Cycle
-![Single Cycle RISC-V](assets/Single%20Cycle%20RISC-V.png)
-
-# Pipelined RISC-V
-![image](assets/Pipelined%20RISC-V.jpg)
-
 ## Overview  
 This project implements a **RISC-V processor** using a **Hardware/Software Co-Design approach**, transitioning from a **single-cycle** design to a **pipelined implementation** with hazard detection.  
 
@@ -21,20 +15,20 @@ The processor supports multiple instruction formats, including **R-type, I-type,
 - **Fully parameterized and modular design**  
 - **Supports standard RISC-V instruction types**  
 
+## RISC-V Single-Cycle
+![Single Cycle RISC-V](assets/Single%20Cycle%20RISC-V%20Datapath.png)
+
+## Pipelined RISC-V
+![image](assets/Pipelined%20RISC-V.jpg)
+
 ## Design Structure  
 
 The design is organized into the following modules:  
 
 ### **Pipelined Implementation**  
 
-#### **Control Logic**
-Handles instruction decoding, execution control, memory operations, and write-back.  
-- [`Control_Logic_Decode.v`](Control_Logic/Control_Logic_Decode.v) – Decodes instructions and generates control signals  
-- [`Control_Logic_Execute.v`](Control_Logic/Control_Logic_Execute.v) – Controls ALU operations  
-- [`Control_Logic_Memory.v`](Control_Logic/Control_Logic_Memory.v) – Manages memory read/write operations  
-- [`Control_Logic_Write.v`](Control_Logic/Control_Logic_Write.v) – Handles register write-back  
+#### 1. Data Path
 
-#### **Data Path**
 Implements the main processing components of the pipeline.  
 - [`Add.v`](Data_Path/Add.v) – Simple adder unit  
 - [`ALU.v`](Data_Path/ALU.v) – Arithmetic Logic Unit for computation  
@@ -48,11 +42,21 @@ Implements the main processing components of the pipeline.
 - [`Register.v`](Data_Path/Register.v) – Single register module  
 - [`RegisterFile.v`](Data_Path/RegisterFile.v) – Register file containing all general-purpose registers  
 
-#### **Hazard Unit** 
+#### 2. Control Logic
+Handles instruction decoding, execution control, memory operations, and write-back.  
+- [`Control_Logic_Decode.v`](Control_Logic/Control_Logic_Decode.v) – Decodes instructions and generates control signals  
+- [`Control_Logic_Execute.v`](Control_Logic/Control_Logic_Execute.v) – Controls ALU operations  
+- [`Control_Logic_Memory.v`](Control_Logic/Control_Logic_Memory.v) – Manages memory read/write operations  
+- [`Control_Logic_Write.v`](Control_Logic/Control_Logic_Write.v) – Handles register write-back  
+
+#### 3. Hazard Unit 
 Detects and resolves data hazards in the pipeline.  
+
+![Hazard Unit](assets/Hazard.png)
+
 - [`Hazard_Unit.v`](Hazard_Unit/Hazard_Unit.v) – Implements forwarding and stall logic  
 
-#### **Memory**
+#### 4. Memory
 Handles instruction and data memory storage.  
 - [`DMEM.v`](Memory/DMEM.v) – Data Memory module  
 - [`IMEM.v`](Memory/IMEM.v) – Instruction Memory module  
@@ -67,6 +71,6 @@ Handles instruction and data memory storage.
 - Includes memory initialization for testing real instruction sequences  
 
 ## Running the Project  
-To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim, Xilinx Vivado, or QuestaSim**).
+To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim, Vivado, or QuestaSim**).
 
 To run the project you can use [run.do](run.do)
