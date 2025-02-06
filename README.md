@@ -50,7 +50,6 @@ Handles instruction decoding, execution control, memory operations, and write-ba
 - [`Control_Logic_Memory.v`](Control_Logic/Control_Logic_Memory.v) – Manages memory read/write operations  
 - [`Control_Logic_Write.v`](Control_Logic/Control_Logic_Write.v) – Handles register write-back  
 
-
 #### 3. Hazard Unit 
 ![Hazard Unit](assets/Hazard.png)
 Detects and resolves data hazards in the pipeline.  
