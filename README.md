@@ -27,7 +27,7 @@ The design is organized into the following modules:
 
 ### **Pipelined Implementation**  
 
-#### 2. Data Path
+#### 1. Data Path
 ![RISC-V Data Path](assets/Single%20Cycle%20RISC-V%20Datapath.png)
 
 Implements the main processing components of the pipeline.  
@@ -43,7 +43,7 @@ Implements the main processing components of the pipeline.
 - [`Register.v`](Data_Path/Register.v) – Single register module  
 - [`RegisterFile.v`](Data_Path/RegisterFile.v) – Register file containing all general-purpose registers  
 
-#### 1. Control Logic
+#### 2. Control Logic
 Handles instruction decoding, execution control, memory operations, and write-back.  
 - [`Control_Logic_Decode.v`](Control_Logic/Control_Logic_Decode.v) – Decodes instructions and generates control signals  
 - [`Control_Logic_Execute.v`](Control_Logic/Control_Logic_Execute.v) – Controls ALU operations  
