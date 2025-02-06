@@ -9,6 +9,8 @@ This project implements a **RISC-V processor** using a **Hardware/Software Co-De
 
 The processor supports multiple instruction formats, including **R-type, I-type, S-type, B-type, U-type, and J-type**.  
 
+![Supported Instructions Summary](assets/RISC-V%20Instructions.png)
+
 ## Features  
 - **Single-cycle and pipelined implementations**  
 - **Hazard detection unit** 
