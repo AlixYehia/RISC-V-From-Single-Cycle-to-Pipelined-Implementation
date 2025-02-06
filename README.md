@@ -21,11 +21,11 @@ The processor supports multiple instruction formats, including **R-type, I-type,
 ## Pipelined RISC-V
 ![image](assets/Pipelined%20RISC-V.jpg)
 
+### **Pipelined Implementation**  
+
 ## Design Structure  
 
 The design is organized into the following modules:  
-
-### **Pipelined Implementation**  
 
 #### **Control Logic**
 Handles instruction decoding, execution control, memory operations, and write-back.  
