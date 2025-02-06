@@ -76,3 +76,7 @@ Handles instruction and data memory storage.
 To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim, Vivado, or QuestaSim**).
 
 To run the project you can use [run.do](run.do)
+
+## Documentation  
+For further details, you can refer to the ![Pipelined RISC-V.pdf](Pipelined%20RISC-V.pdf) and other documentation available at:  
+[Documents](Documents) 
