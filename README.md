@@ -1,4 +1,10 @@
-# RISC-V: From Single-Cycle to Pipelined Implementation  
+# RISC-V: From Single-Cycle to Pipelined Implementation
+
+# RISC-V Single-Cycle
+![Single Cycle RISC-V](assets/Single%20Cycle%20RISC-V.png)
+
+# Pipelined RISC-V
+![image](assets/Pipelined%20RISC-V.jpg)
 
 ## Overview  
 This project implements a **RISC-V processor** using a **Hardware/Software Co-Design approach**, transitioning from a **single-cycle** design to a **pipelined implementation** with hazard detection.  
