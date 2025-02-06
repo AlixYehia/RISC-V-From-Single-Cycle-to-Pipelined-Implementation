@@ -68,8 +68,8 @@ Handles instruction and data memory storage.
 - [`Venus.txt`](Venus.txt) – Contains RISC-V assembly code for testing on [Venus Simulator](https://venus.cs61a.org/)  
 
 ## Simulation & Testing  
-- Testbenches validate correct execution for various instruction types  
-- Waveforms illustrate pipeline operation and hazard handling  
+- Testbenche validates correct execution for various instruction types  
+- Waveform illustrates pipeline operation and hazard handling  
 - Includes memory initialization for testing real instruction sequences  
 
 ## Running the Project  
