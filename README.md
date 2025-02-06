@@ -35,6 +35,8 @@ Handles instruction decoding, execution control, memory operations, and write-ba
 - [`Control_Logic_Write.v`](Control_Logic/Control_Logic_Write.v) – Handles register write-back  
 
 #### **Data Path**
+![RISC-V Data Path](assets/Single%20Cycle%20RISC-V%20Datapath.png)
+
 Implements the main processing components of the pipeline.  
 - [`Add.v`](Data_Path/Add.v) – Simple adder unit  
 - [`ALU.v`](Data_Path/ALU.v) – Arithmetic Logic Unit for computation  
@@ -49,6 +51,8 @@ Implements the main processing components of the pipeline.
 - [`RegisterFile.v`](Data_Path/RegisterFile.v) – Register file containing all general-purpose registers  
 
 #### **Hazard Unit** 
+## RISC-V Single-Cycle
+![Hazard Unit](assets/Hazard.png)
 Detects and resolves data hazards in the pipeline.  
 - [`Hazard_Unit.v`](Hazard_Unit/Hazard_Unit.v) – Implements forwarding and stall logic  
 
