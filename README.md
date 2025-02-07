@@ -78,5 +78,5 @@ To simulate the project, use your preferred Verilog simulator (e.g., **ModelSim,
 To run the project you can use [run.do](run.do)
 
 ## Documentation  
-For further details, you can refer to the [Pipelined RISC-V.pdf](Pipelined%20RISC-V.pdf) and other documentation available at:  
+For further details, you can refer to the [Pipelined RISC-V.pdf](https://drive.google.com/file/d/1PyFXoQ9uWLn-DQj4MadpJ6buIPdtJipc/view?usp=sharing) and other documentation available at:  
 [Documents](Documents) 
