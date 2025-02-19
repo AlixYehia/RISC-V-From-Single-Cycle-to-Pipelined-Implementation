@@ -65,7 +65,7 @@ Handles instruction and data memory storage.
 - [`instruction.txt`](Memory/instruction.txt) – Sample instruction memory file  
 
 #### **Venus Program Code** 
-- [`Venus.txt`](Venus.txt) – Contains RISC-V assembly code for testing on [Venus Simulator](https://venus.cs61a.org/)  
+- [`Venus.txt`](Venus.txt) – Contains RISC-V assembly code for testing on [Venus Simulator](https://venus.cs61c.org/)  
 
 ## Simulation & Testing  
 - Testbenche validates correct execution for various instruction types  
