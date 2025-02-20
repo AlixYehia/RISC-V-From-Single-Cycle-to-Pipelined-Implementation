@@ -1,1 +1,1 @@
-The registers before the mux are essentials because if I removed them and put one after in ALU for example the output will be 1 then x and since mux reads combinational it will the last thing which is x not right before the posedge as if it was registered
+The registers before the mux are essentials because if I removed them and put one after the writeback mux, this will result in the values being read one clock cycle early, leading to an incorrect writeback.
