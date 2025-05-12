@@ -3,7 +3,6 @@
 ## Overview  
 This project implements a **RISC-V processor** using a **Hardware/Software Co-Design approach**, transitioning from a **single-cycle** design to a **pipelined implementation** with hazard detection.  
 
-### **Co-Design Aspects**
 - **Hardware (HW):** A fully functional **RISC-V pipelined processor** implemented in Verilog.  
 - **Software (SW):** A RISC-V assembly program written and simulated in **Venus**, generating instructions executed by the hardware.  
 
